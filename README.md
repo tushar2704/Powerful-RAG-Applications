@@ -89,7 +89,6 @@ We welcome contributions from the community to enhance the functionality and uti
 
 Please ensure that any contributions align with the repository's purpose and maintain high standards of quality and usability.
 
-## Maintained by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)
 
 ## License
 
@@ -523,13 +522,13 @@ The field of Retrieval-Augmented Generation is rapidly evolving, and there are s
 
 ### Community and Support
 
-- [RAG Discussion Forum](https://example.com/rag-forum): A community forum for discussing RAG-related topics, sharing experiences, and seeking help from experts.
+- [RAG Discussion](https://www.linkedin.com/in/tusharaggarwalinseec/): A community forum for discussing RAG-related topics, sharing experiences, and seeking help from experts.
 
-- [RAG Slack Community](https://example.com/rag-slack): A Slack workspace for real-time collaboration and communication among RAG practitioners and researchers.
+- [Slack Community Upcoming](https://www.linkedin.com/in/tusharaggarwalinseec/): A Slack workspace for real-time collaboration and communication among RAG practitioners and researchers.
 
-- [RAG GitHub Repository](https://github.com/example/rag): A GitHub repository containing code examples, tutorials, and resources related to RAG applications.
+- [Additional RAG GitHub Repository](https://www.linkedin.com/in/tusharaggarwalinseec/): A GitHub repository containing code examples, tutorials, and resources related to RAG applications.
 
-- [RAG Twitter](https://twitter.com/rag_updates): A Twitter account providing updates, news, and insights about RAG research and development.
+- [Twitter Upcoming](https://www.linkedin.com/in/tusharaggarwalinseec/): A Twitter account providing updates, news, and insights about RAG research and development.
 
 ## Conclusion
 
