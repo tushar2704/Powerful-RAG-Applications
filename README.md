@@ -1,6 +1,7 @@
 # Powerful RAG Applications
 ![o1he3uzai8vowpgw5xsd](https://github.com/tushar2704/Powerful-RAG-Applications/assets/66141195/59c3fa6a-520e-4115-a6e7-983178e473ec)
 
+![this](https://github.com/tushar2704/Powerful-RAG-Applications/assets/66141195/21ec76b6-02a9-415e-bdab-c5a832f7372d)
 
 `Your source to learn and build RAG applications.`
 
