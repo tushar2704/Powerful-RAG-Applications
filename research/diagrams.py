@@ -10,37 +10,26 @@
 #Simple RAG diagram
 from diagrams import Cluster, Diagram
 from diagrams.custom import Custom
-from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.network import Nginx
-from diagrams.programming.framework import Flask
+from diagrams.onprem.database import Mongodb
 from diagrams.programming.language import Python
 def rag_diagram():
-    # Defining custom icons
-    DocumentsIcon = Custom("Documents", "./icons/documents.png")
-    TextChunksIcon = Custom("Text Chunks", "./icons/text_chunks.png")
-    EmbedderIcon = Custom("Embedder", "./icons/embedder.png")
-    RerankerIcon = Custom("Reranker", "./icons/reranker.png")
-    OptionalRerankerIcon = Custom("Optional Reranker", "./icons/optional_reranker.png")
-    LLMIcon = Custom("LLM", "./icons/llm.png")
+    with Diagram("Text-based Information Retrieval System", show=False):
+        with Cluster("Input"):
+            documents = Custom("Documents", "./icons/documents.png")
+            text_chunks = Custom("Text Chunks", "./icons/text_chunks.png")
 
-    with Diagram("Text-based Question Answering System", show=False, outformat="png"):
-        docs = DocumentsIcon()
-        text_chunks = TextChunksIcon()
-        embedder = EmbedderIcon()
-        embeddings = PostgreSQL("Embeddings")
-        reranker = RerankerIcon()
-        optional_reranker = OptionalRerankerIcon()
-        llm = LLMIcon()
-        prompt = Custom("Prompt Template", "./icons/prompt.png")
+        embedder = Python("Embedder")
+        
+        with Cluster("Storage"):
+            embeddings = Mongodb("Embeddings\nin Memory\nor Vector DB")
 
-        with Cluster("Main Flow"):
-            docs >> text_chunks >> embedder >> embeddings
-            embeddings >> reranker
-            reranker >> optional_reranker >> llm
-            llm >> Custom("Response", "./icons/response.png")
+        reranker = Python("Reranker")
+        prompt = Custom("Plug into\nPrompt Template", "./icons/prompt.png")
+        llm = Python("LLM")
+        response = Custom("Response", "./icons/response.png")
 
-        with Cluster("Prompt"):
-            optional_reranker >> prompt >> llm
+        documents >> text_chunks >> embedder >> embeddings
+        embeddings >> reranker >> prompt >> llm >> response
 
 
 
